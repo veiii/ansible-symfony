@@ -1,0 +1,10 @@
+---
+
+- hosts: pi-local
+  remote_user: ubuntu
+  become: yes
+
+  roles:
+    - common
+    - web
+    - db
